@@ -1,0 +1,933 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EUREK.MX | Directorio Empresarial de México</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="EUREK.MX - El directorio empresarial más completo de México. Encuentra proveedores, servicios y empresas verificadas por industria y ubicación.">
+
+  <meta property="og:title" content="EUREK.MX | Directorio Empresarial de México">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eurek.mx">
+  <meta property="og:image" content="https://eurek.mx/img/og-image.jpg">
+  <meta property="og:image:alt" content="EUREK.MX Directorio Empresarial">
+  <meta property="og:description" content="Conectamos empresas en México. Encuentra proveedores verificados, compara servicios y haz crecer tu negocio.">
+  <meta property="og:locale" content="es_MX">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EUREK.MX | Directorio Empresarial de México">
+  <meta name="twitter:description" content="El directorio empresarial más completo de México">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0a1628">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Component -->
+  <div id="header-placeholder"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Encuentra la empresa perfecta para tu negocio
+        </h1>
+        <p class="hero-subtitle">
+          El directorio empresarial más completo de México. Más de <strong>50,000 empresas verificadas</strong> listas para conectar contigo.
+        </p>
+
+        <!-- Search Box -->
+        <div class="search-box">
+          <form class="search-form" id="searchForm">
+            <div class="search-input-group">
+              <div class="search-field search-field-main">
+                <label for="searchQuery" class="search-label">¿Qué buscas?</label>
+                <input
+                  type="text"
+                  id="searchQuery"
+                  name="q"
+                  class="search-input"
+                  placeholder="Ej: Desarrollo de software, Marketing digital..."
+                  autocomplete="off"
+                >
+              </div>
+
+              <div class="search-field search-field-location">
+                <label for="searchLocation" class="search-label">Ubicación</label>
+                <select id="searchLocation" name="location" class="search-select">
+                  <option value="">Todo México</option>
+                  <option value="cdmx">Ciudad de México</option>
+                  <option value="jalisco">Jalisco</option>
+                  <option value="nuevo-leon">Nuevo León</option>
+                  <option value="puebla">Puebla</option>
+                  <option value="guanajuato">Guanajuato</option>
+                  <option value="queretaro">Querétaro</option>
+                  <option value="yucatan">Yucatán</option>
+                  <option value="veracruz">Veracruz</option>
+                  <option value="coahuila">Coahuila</option>
+                  <option value="baja-california">Baja California</option>
+                </select>
+              </div>
+
+              <button type="submit" class="search-btn">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <span>Buscar</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Quick filters -->
+          <div class="quick-filters">
+            <span class="quick-filters-label">Búsquedas populares:</span>
+            <a href="/categorias/tecnologia/" class="quick-filter-tag">Tecnología</a>
+            <a href="/categorias/construccion/" class="quick-filter-tag">Construcción</a>
+            <a href="/categorias/logistica/" class="quick-filter-tag">Logística</a>
+            <a href="/categorias/manufactura/" class="quick-filter-tag">Manufactura</a>
+            <a href="/categorias/consultoria/" class="quick-filter-tag">Consultoría</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Explora por Industria</h2>
+        <p class="section-subtitle">Encuentra empresas especializadas en el sector que necesitas</p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="/categorias/tecnologia/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="category-name">Tecnología</h3>
+          <span class="category-count">8,542 empresas</span>
+        </a>
+
+        <a href="/categorias/construccion/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3 class="category-name">Construcción</h3>
+          <span class="category-count">6,128 empresas</span>
+        </a>
+
+        <a href="/categorias/logistica/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="category-name">Logística</h3>
+          <span class="category-count">4,891 empresas</span>
+        </a>
+
+        <a href="/categorias/manufactura/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Manufactura</h3>
+          <span class="category-count">5,234 empresas</span>
+        </a>
+
+        <a href="/categorias/marketing/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <line x1="12" y1="20" x2="12" y2="10"></line>
+              <line x1="18" y1="20" x2="18" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="category-name">Marketing</h3>
+          <span class="category-count">3,876 empresas</span>
+        </a>
+
+        <a href="/categorias/salud/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Salud</h3>
+          <span class="category-count">4,102 empresas</span>
+        </a>
+
+        <a href="/categorias/finanzas/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="9" y1="21" x2="9" y2="9"></line>
+            </svg>
+          </div>
+          <h3 class="category-name">Finanzas</h3>
+          <span class="category-count">2,945 empresas</span>
+        </a>
+
+        <a href="/categorias/comercio-exterior/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Comercio Exterior</h3>
+          <span class="category-count">1,823 empresas</span>
+        </a>
+
+        <a href="/categorias/servicios/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Servicios</h3>
+          <span class="category-count">7,654 empresas</span>
+        </a>
+
+        <a href="/categorias/educacion/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Educación</h3>
+          <span class="category-count">2,341 empresas</span>
+        </a>
+
+        <a href="/categorias/agroindustria/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <h3 class="category-name">Agroindustria</h3>
+          <span class="category-count">3,128 empresas</span>
+        </a>
+
+        <a href="/categorias/equipos-contra-incendios/" class="category-card">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2c1.5 2 2.5 4 2.5 6.5 0 3.5-2.5 6-5.5 6s-5.5-2.5-5.5-6c0-2.5 1-4.5 2.5-6.5"></path>
+              <path d="M9 14.5c0 1.5 1.5 3 3 3s3-1.5 3-3"></path>
+              <path d="M12 22v-4.5"></path>
+              <path d="M8 22h8"></path>
+            </svg>
+          </div>
+          <h3 class="category-name">Equipos Contra Incendios</h3>
+          <span class="category-count">2,847 empresas</span>
+        </a>
+
+        <a href="/categorias/" class="category-card category-card-more">
+          <div class="category-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="1"></circle>
+              <circle cx="19" cy="12" r="1"></circle>
+              <circle cx="5" cy="12" r="1"></circle>
+            </svg>
+          </div>
+          <h3 class="category-name">Ver Todas</h3>
+          <span class="category-count">150+ categorías</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Featured Companies Section -->
+  <section class="featured-companies" id="empresas">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Empresas Destacadas</h2>
+        <p class="section-subtitle">Empresas verificadas con las mejores calificaciones en México</p>
+      </div>
+
+      <div class="companies-grid-v2">
+        <!-- Company Card 1 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=400&fit=crop" alt="Oficinas TechMX Solutions" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-premium">Premium</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo TechMX Solutions">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">TechMX Solutions</h3>
+                <p class="company-category-v2">Desarrollo de Software & Tecnología</p>
+              </div>
+            </div>
+            <p class="company-description">Empresa líder en desarrollo de software empresarial con más de 15 años de experiencia. Especializados en soluciones cloud, aplicaciones móviles e inteligencia artificial para empresas Fortune 500.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Ciudad de México, CDMX</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>150-500 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2009</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">5.0</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">128 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Apps Móviles</span>
+              <span class="service-tag">Cloud Computing</span>
+              <span class="service-tag">Inteligencia Artificial</span>
+              <span class="service-tag">ERP</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 2 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&h=400&fit=crop" alt="Proyecto Grupo Constructor Norte" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo Grupo Constructor Norte">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">Grupo Constructor Norte</h3>
+                <p class="company-category-v2">Construcción Industrial & Obra Civil</p>
+              </div>
+            </div>
+            <p class="company-description">Constructora especializada en naves industriales, centros de distribución y proyectos de infraestructura. Más de 2 millones de m² construidos en el norte del país con certificación LEED.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Monterrey, Nuevo León</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>500-1000 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 1995</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.8</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star" width="14" height="14" viewBox="0 0 24 24"><polygon fill="none" stroke="currentColor" stroke-width="2" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">95 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Naves Industriales</span>
+              <span class="service-tag">Obra Civil</span>
+              <span class="service-tag">LEED</span>
+              <span class="service-tag">Diseño-Construcción</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 3 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=400&fit=crop" alt="Centro de distribución LogiExpress" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-top">Top 10</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo LogiExpress MX">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">LogiExpress MX</h3>
+                <p class="company-category-v2">Logística y Cadena de Suministro</p>
+              </div>
+            </div>
+            <p class="company-description">Operador logístico integral con cobertura nacional. Servicios de almacenaje, distribución, última milla y fulfillment para e-commerce. Flota propia de más de 500 unidades y tecnología de rastreo en tiempo real.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Guadalajara, Jalisco</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>1000+ empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2005</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.9</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">203 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Última Milla</span>
+              <span class="service-tag">Almacenaje</span>
+              <span class="service-tag">Fulfillment</span>
+              <span class="service-tag">Cross-Docking</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 4 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop" alt="Equipo Digital Growth Agency" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo Digital Growth Agency">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">Digital Growth Agency</h3>
+                <p class="company-category-v2">Marketing Digital & Publicidad</p>
+              </div>
+            </div>
+            <p class="company-description">Agencia de marketing digital especializada en estrategias de crecimiento para empresas B2B. Google Partner Premier con expertise en SEO, SEM, automatización de marketing y generación de leads calificados.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Querétaro, Qro.</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>50-150 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2015</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.7</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star" width="14" height="14" viewBox="0 0 24 24"><polygon fill="none" stroke="currentColor" stroke-width="2" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">156 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">SEO</span>
+              <span class="service-tag">Google Ads</span>
+              <span class="service-tag">Social Media</span>
+              <span class="service-tag">HubSpot</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 5 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop" alt="Planta Manufacturas del Bajío" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-iso">ISO 9001</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo Manufacturas del Bajío">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">Manufacturas del Bajío</h3>
+                <p class="company-category-v2">Manufactura & Maquinados CNC</p>
+              </div>
+            </div>
+            <p class="company-description">Empresa de manufactura de precisión con equipos CNC de última generación. Proveedor Tier 1 para la industria automotriz y aeroespacial. Certificaciones ISO 9001, IATF 16949 y AS9100.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>León, Guanajuato</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>200-500 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 1988</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.9</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">87 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">CNC</span>
+              <span class="service-tag">Automotriz</span>
+              <span class="service-tag">Aeroespacial</span>
+              <span class="service-tag">Prototipado</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 6 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=400&fit=crop" alt="Consultoría Estratégica Empresarial" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-premium">Premium</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo Consultores Estratégicos MX">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">Consultores Estratégicos MX</h3>
+                <p class="company-category-v2">Consultoría de Negocios & Estrategia</p>
+              </div>
+            </div>
+            <p class="company-description">Firma de consultoría estratégica con enfoque en transformación digital, optimización de procesos y desarrollo organizacional. Equipo de consultores con experiencia en McKinsey, Bain y BCG.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Ciudad de México, CDMX</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>30-50 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2012</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">5.0</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">64 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Estrategia</span>
+              <span class="service-tag">Transformación Digital</span>
+              <span class="service-tag">M&A</span>
+              <span class="service-tag">Due Diligence</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 7 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop" alt="Equipos contra incendio FireTech" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-iso">FM Approved</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo FireTech México">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">FireTech México</h3>
+                <p class="company-category-v2">Equipos Contra Incendios & Seguridad</p>
+              </div>
+            </div>
+            <p class="company-description">Líder nacional en sistemas de protección contra incendios. Diseño, instalación y mantenimiento de sistemas de supresión, detección y alarma. Distribuidores autorizados de marcas FM Approved.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Toluca, Estado de México</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>100-200 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2001</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.8</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star" width="14" height="14" viewBox="0 0 24 24"><polygon fill="none" stroke="currentColor" stroke-width="2" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">142 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Sprinklers</span>
+              <span class="service-tag">Detección</span>
+              <span class="service-tag">Extintores</span>
+              <span class="service-tag">Capacitación</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 8 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&h=400&fit=crop" alt="Oficinas ContaFiscal Pro" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo ContaFiscal Pro">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">ContaFiscal Pro</h3>
+                <p class="company-category-v2">Contabilidad & Servicios Fiscales</p>
+              </div>
+            </div>
+            <p class="company-description">Despacho contable y fiscal con más de 25 años de experiencia. Servicios de contabilidad, auditoría, planeación fiscal y defensa ante el SAT. Atención personalizada para PyMEs y grandes empresas.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Mérida, Yucatán</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>20-50 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 1998</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.6</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star" width="14" height="14" viewBox="0 0 24 24"><polygon fill="none" stroke="currentColor" stroke-width="2" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">78 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">Contabilidad</span>
+              <span class="service-tag">Fiscal</span>
+              <span class="service-tag">Auditoría</span>
+              <span class="service-tag">Nómina</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Company Card 9 -->
+        <article class="company-card-v2">
+          <div class="company-image">
+            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=800&h=400&fit=crop" alt="Laboratorio BioTech Solutions" loading="lazy">
+            <div class="company-badges">
+              <span class="badge badge-verified">Verificada</span>
+              <span class="badge badge-top">Top 5</span>
+            </div>
+          </div>
+          <div class="company-content">
+            <div class="company-header-v2">
+              <div class="company-logo-v2">
+                <img src="img/placeholder-logo.svg" alt="Logo BioTech Solutions">
+              </div>
+              <div class="company-title">
+                <h3 class="company-name-v2">BioTech Solutions</h3>
+                <p class="company-category-v2">Biotecnología & Ciencias de la Vida</p>
+              </div>
+            </div>
+            <p class="company-description">Empresa de biotecnología enfocada en desarrollo de soluciones para la industria farmacéutica y agrícola. Laboratorios con certificación GMP y equipo de I+D con doctorados de instituciones líderes.</p>
+            <div class="company-meta">
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Cuernavaca, Morelos</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span>80-150 empleados</span>
+              </div>
+              <div class="meta-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Fundada en 2010</span>
+              </div>
+            </div>
+            <div class="company-rating-v2">
+              <div class="rating-score">4.9</div>
+              <div class="rating-details">
+                <div class="stars">
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                  <svg class="star filled" width="14" height="14" viewBox="0 0 24 24"><polygon fill="currentColor" points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <span class="rating-count">53 reseñas verificadas</span>
+              </div>
+            </div>
+            <div class="company-services">
+              <span class="service-tag">I+D</span>
+              <span class="service-tag">Farmacéutica</span>
+              <span class="service-tag">Agroindustria</span>
+              <span class="service-tag">GMP</span>
+            </div>
+            <div class="company-footer-v2">
+              <a href="#" class="btn btn-primary-v2">Ver Perfil Completo</a>
+              <a href="#" class="btn btn-outline-v2">Contactar</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="section-cta">
+        <a href="#" class="btn btn-secondary">Ver Más Empresas</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Component -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts -->
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
